@@ -1,5 +1,5 @@
 # distributed-correlation
-This is a package provide distributed correlation compute.
+This package provide distributed correlation compute.
 When we have billions of rows across several machine there might difficulties to collect all data into a single machine.
 At that time we can compute total correlation with several statistical summaries.
 

@@ -69,3 +69,14 @@ the result is 8x8 matrix ( because we have 8 dimensions )
 -0.3006123,-0.2518928,-0.1243574,-0.2715705,-0.4647484,-0.3627682,1.0,0.0106061,
 -0.0104305,0.0905155,0.0870138,-0.040228,-0.3002993,-0.544351,0.0106061,1.0,
 ```
+
+
+## check out the test case for more
+https://github.com/jeesim2/distributed-correlation/blob/master/src/test/java/com/jeesim2/distributedcorrelation/GlobalStatsTest.java
+
+# Statistical background
+* standard deviation merging
+https://www.researchgate.net/post/How_do_I_combine_mean_and_standard_deviation_of_two_groups
+
+* covariace merging
+https://math.stackexchange.com/questions/377684/how-to-combine-covariance-matrices

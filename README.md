@@ -76,7 +76,9 @@ https://github.com/jeesim2/distributed-correlation/blob/master/src/test/java/com
 
 # Statistical background
 * standard deviation merging
+
 https://www.researchgate.net/post/How_do_I_combine_mean_and_standard_deviation_of_two_groups
 
 * covariace merging
+
 https://math.stackexchange.com/questions/377684/how-to-combine-covariance-matrices

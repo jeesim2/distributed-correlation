@@ -4,6 +4,8 @@ When we have billions of rows across several machine there might difficulties to
 At that time we can compute total correlation with several statistical summaries.
 
 # Central vs Distributed
+
+### given data
 ```
     double[][] testData = new double[][]{
             {1, 2, 4, 3, 0, 3, 95, 252},
@@ -36,16 +38,20 @@ the result is 8x8 matrix ( because we have 8 dimensions )
 
 ## Distributed calculation with this package
 ```
-// simulate 3 
-// let's devide all rows into three parts
+// simulate rows are distributed across three nodes
+
+// first node
 double[][] range1 = Arrays.copyOfRange(testData, 0, 3);
 LocalStats localStats1 = new LocalStats(range1);
 
+// second node
 double[][] range2 = Arrays.copyOfRange(testData, 3, 5);
 LocalStats localStats2 = new LocalStats(range2);
 
+// third node
 double[][] range3 = Arrays.copyOfRange(testData, 5, 7);
 LocalStats localStats3 = new LocalStats(range3);
+
 
 // calculate GlobalStats with localStats list.
 GlobalStats globalStats = new GlobalStats(Arrays.asList(localStats1, localStats2, localStats3));
